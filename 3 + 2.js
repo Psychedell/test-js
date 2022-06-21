@@ -246,4 +246,21 @@
 // console.log(Math.pow(number, extent));
 // console.log(number ** extent);
 
-console.log(Math);
+// let max = 55;
+// let min = 1;
+// console.log(Math.round(Math.random() * (max - min) + min));
+// console.log(Math.round().toFixed());
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ДОДЕЛАТЬ!!!!!!!!!!!!!!!!!!!!!!!
+// const brand = "tOyoTA hiLANDer";
+// let normalizedBrand = 0;
+// console.log(brand);
+// // const splitBrand = brand.split(" ");
+// // console.log(splitBrand);
+// for (let i = 0; i >= brand.length; i += 1) {
+//   normalizedBrand += i;
+//   //   console.log(normalizedBrand);
+//   //   array[0].toUpperCase() + array.slice(1).toLowerCase();
+// }
+
+// console.log(normalizedBrand);
