@@ -264,3 +264,142 @@
 // }
 
 // console.log(normalizedBrand);
+
+// console.log(Boolean(-0));
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(false));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+// console.log(Boolean(undefined));
+
+// console.log(Boolean(2));
+// console.log(Boolean(-333));
+// console.log(Boolean(true));
+// console.log(Boolean("dsffdf"));
+// console.log(Boolean("0"));
+
+// const x1 = 20;
+// const x2 = 80;
+// const number = 645645645747;
+
+// // // попадает ли число в отрезок между х1 и х2?
+// // console.log(number > x1 && number < 80);
+// // // попадает ли число в отрезок до х1 или больше х2?
+// // console.log(number < x1 || number > x2);
+// // // число равно х1 или х1
+// // console.log(number === x1 || number === x2);
+
+// if (number > x1 && number < 80) {
+//   console.log(`число ${number}, попадает в отрезок между ${x1} и ${x2}`);
+// } else if (number < x1 || number > x2) {
+//   console.log(`число ${number}, попадает в отрезок до ${x1} или больше ${x2}`);
+// } else {
+//   console.log(`число ${number}, равно ${x1} или ${x2}`);
+// }
+
+// const isFriend = true;
+// const isOnline = true;
+// const isDnd = true;
+
+// const canOpenChat = isFriend && isOnline && !isDnd;
+
+// console.log("Можно открыть чат?", canOpenChat);
+
+// let clientCounter = 18;
+// const maxClients = 25;
+
+// while (clientCounter <= maxClients) {
+//   console.log(clientCounter);
+//   clientCounter += 1;
+// }
+
+// const max = 10;
+// for (let i = 1; i < max; i += 1) {
+//   console.log(`${max} % ${i} = `, max % i);
+// }
+
+// for (let i = 0; i <= 5; i += 1) {
+//   //   console.log(i);
+
+//   if (i === 3) {
+//     console.log("Нашли число 3, прерываем выполнение цикла");
+//     break;
+//   }
+// }
+// console.log("Лог после цикла");
+
+// const minSalary = 1000;
+// const maxSalary = 10000;
+// const eployees = 2;
+// let totalSalary = 0;
+
+// for (let i = 1; i <= eployees; i += 1) {
+//   const salary = Math.round(
+//     Math.random() * (maxSalary - minSalary) + minSalary
+//   );
+//   console.log(salary);
+//   totalSalary += salary;
+// }
+
+// console.log(`${eployees} employees, total earns ${totalSalary} per month.`);
+
+// выводить сумму всех четных чисел
+// const min = 0;
+// const max = 10;
+// let total = 0;
+
+// for (let i = min; i <= max; i += 1) {
+//   if (i % 2 === 0) {
+//     continue;
+//   }
+//   total += i;
+// }
+// console.log(total);
+
+// const fruits = ["apple", "banana"];
+// const meat = ["poultry", "beef", "fish"];
+// const vegetables = ["potato", "tomato", "cucumber"];
+// const food = [...fruits, ...meat, ...vegetables];
+// console.log(food);
+
+// const fruits = [
+//   "banana",
+//   "apple",
+//   "orange",
+//   "watermelon",
+//   "apple",
+//   "orange",
+//   "grape",
+//   "apple",
+// ];
+// const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
+// console.log(randomFruit); // поверне рандомний фрукт із масиву
+
+// const clients = ["Mango", "Poly", "Ajax"];
+// // const lastElementIndex = clients.length - 1;
+// // console.log(lastElementIndex); // 2
+// console.log(clients[1]);
+
+// const scores = [1, 2, 3, 4, 5];
+
+// // Удаляем три элемента массива, начиная с первого элемента (индекс 0)
+// scores.pop(1, 2, 3, 4, 5);
+
+// // Теперь массив scores содержит два элемента
+// console.log(scores); // [4, 5]
+
+// const cars = ["audi", "mitsubishi", "honda", "bmw"];
+// for (let i = 0; i < cars.length; i += 1) {
+//   console.log(`Car ${i + 1} is: ${cars[i]}`);
+// }
+
+// const cars = "audi*mitsubishi*honda*bmw";
+// const qrCodes = "000000000, 111111111, 22222222, 333333333";
+// const arrayOfCars = cars.split("*");
+// const arrayOfQrCodes = qrCodes.split(",");
+// console.log(arrayOfCars, arrayOfQrCodes);
+
+// for (let i = 0; i < arrayOfCars.length; i += 1) {
+//   console.log(`${arrayOfCars[i]} qr code is ${arrayOfQrCodes[i]}`);
+// }
