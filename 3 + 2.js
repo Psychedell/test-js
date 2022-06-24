@@ -121,8 +121,6 @@
 // checkStorage(100, 50);
 // console.log(message);
 
-// const clients = ["Mango", "Poly", "Ajax"];
-
 // const firstElementIndex = clients[1];
 // const lastElementIndex = clients.length - 1;
 
@@ -403,3 +401,12 @@
 // for (let i = 0; i < arrayOfCars.length; i += 1) {
 //   console.log(`${arrayOfCars[i]} qr code is ${arrayOfQrCodes[i]}`);
 // }
+
+// function count(countFrom = 0, countTo = 10, step = 1) {
+//   console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
+
+//   for (let i = countFrom; i <= countTo; i += step) {
+//     console.log(i);
+//   }
+// }
+// count();
