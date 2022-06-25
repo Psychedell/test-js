@@ -410,3 +410,92 @@
 //   }
 // }
 // count();
+
+//ОБЪЕКТЫ, модуль 3
+
+// const film = {
+//   name: "Avengers: Endgame",
+//   actors: [
+//     "Robert Downey",
+//     "Chris Evans",
+//     "Mark Ruffalo",
+//     "Chris Hemsworth",
+//     "Scarlett Johansson",
+//   ],
+//   rating: 8.4,
+//   year: 2019,
+//   addActor(actor) {
+//     this.actors.push(actor);
+//   },
+// };
+
+// film.addActor("Jasohn Stathem");
+// film.addActor("Anjelina Johli");
+
+// film.deleteActor("Mark Ruffalo");
+
+// console.log(film);
+
+// console.log(film.name);
+// console.log(film.actors[0]);
+// console.log(film.year);
+
+// const reviewFrom = "actors";
+
+// console.log(film.reviewFrom);
+// console.log(film[reviewFrom]);
+
+// const film = "Jumandji";
+// const rating = "7.1";
+// const year = 1997;
+
+// const review = {
+//   [film]: rating,
+//   year,
+//   phone: 71811122233,
+// };
+
+// review.year = 2001;
+// console.log(review);
+
+// // cars
+// const carNumber = "KA1111OC";
+
+// const car = {
+//   number: "KA1111OC",
+// };
+
+// car.model = "Audi";
+// car.model = "Toyota";
+// // car.number = "AA1234BC";
+// car.type = "Camry";
+
+// console.log(car);
+
+const feedback = {
+  exellent: 12,
+  good: 330,
+  normal: 37,
+  bad: 3,
+};
+
+let totalFeedback = 0;
+
+const keys = Object.keys(feedback);
+
+for (const key of keys) {
+  //   console.log(feedback[key]);
+  totalFeedback += feedback[key];
+}
+
+console.log(totalFeedback);
+
+// let totalFeedback2 = 0;
+// const values = Object.values(feedback);
+// console.log(values);
+// for (const value of values) {
+//   console.log(value);
+//   totalFeedback2 += value;
+// }
+
+// console.log(`Total value of feedbacks: ${totalFeedback2}`);
