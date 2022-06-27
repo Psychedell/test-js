@@ -472,23 +472,23 @@
 
 // console.log(car);
 
-const feedback = {
-  exellent: 12,
-  good: 330,
-  normal: 37,
-  bad: 3,
-};
+// const feedback = {
+//   exellent: 12,
+//   good: 330,
+//   normal: 37,
+//   bad: 3,
+// };
 
-let totalFeedback = 0;
+// let totalFeedback = 0;
 
-const keys = Object.keys(feedback);
+// const keys = Object.keys(feedback);
 
-for (const key of keys) {
-  //   console.log(feedback[key]);
-  totalFeedback += feedback[key];
-}
+// for (const key of keys) {
+//   //   console.log(feedback[key]);
+//   totalFeedback += feedback[key];
+// }
 
-console.log(totalFeedback);
+// console.log(totalFeedback);
 
 // let totalFeedback2 = 0;
 // const values = Object.values(feedback);
