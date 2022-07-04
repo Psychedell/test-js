@@ -499,3 +499,244 @@
 // }
 
 // console.log(`Total value of feedbacks: ${totalFeedback2}`);
+
+//
+
+// const salaries = { mango: 100, poly: 150, alfred: 80 };
+
+// let totalSalary = 0;
+// // Change code below this line
+// const values = Object.values(salaries);
+// console.log(values);
+// for (const value of values) {
+//   console.log(value);
+//   totalSalary += value;
+// }
+
+// console.log(totalSalary);
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// const propName = "name";
+
+// for (const product of products) {
+//   //   console.log(product);
+//   const keys = Object.keys(product);
+//   //   console.log(keys);
+//   if (Object.keys(product) === propName) {
+//     console.log(Object.values(propName));
+//   }
+// }
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   for (const product of products) {
+//     console.log(product);
+//   }
+
+//   // Change code above this line
+// }
+
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//   // Имитируем доступность абонента случайным числом
+//   const isRecipientAvailable = Math.random() > 0.5;
+
+//   if (!isRecipientAvailable) {
+//     onNotAvailable(recipient);
+//     return;
+//   }
+
+//   onAvailable(recipient);
+// }
+
+// function takeCall(name) {
+//   console.log(`Соединяем с ${name}, ожидайте...`);
+//   // Логика принятия звонка
+// }
+
+// function activateAnsweringMachine(name) {
+//   console.log(`Абонент ${name} недоступен, оставьте сообщение.`);
+//   // Логика активации автоответчика
+// }
+
+// function leaveHoloMessage(name) {
+//   console.log(`Абонент ${name} недоступен, записываем голограмму.`);
+//   // Логика записи голограммы
+// }
+
+// processCall("Манго", takeCall, activateAnsweringMachine);
+// processCall("Поли", takeCall, leaveHoloMessage);
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// // Классический for
+// // for (let i = 0; i < numbers.length; i += 1) {
+// //     console.log(`Индекс ${i}, значение ${numbers[i]}`);
+
+// // }
+
+// // Перебирающий forEach
+// numbers.forEach(function (number, index) {
+//   console.log(`Индекс ${index}, значение ${number}`);
+// });
+
+// модуль 3, задача 41
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     for (const potion of this.potions) {
+//       if (potion.name === newPotion.name) {
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//       }
+//     }
+//     this.potions.push(newPotion);
+//   },
+
+//   removePotion(potionName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       const potion = this.potions[i];
+//       if (potion.name === potionName) {
+//         this.potions.splice(i, 1);
+//       }
+//     }
+//     return `Potion ${potionName} is not in inventory!`;
+//   },
+//   updatePotionName(oldName, newName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       const potion = this.potions[i];
+//       if (oldName === potion.name) {
+//         potion.name = newName;
+//       }
+//     }
+//   },
+//   // Change code above this line
+// };
+
+// модуль 4
+// const doMath = function (a, b, c, callback) {
+//   const result = callback(a, b, c);
+//   console.log(result);
+// };
+
+// const multiply = function (x, y, z) {
+//   return x * y * z;
+// };
+
+// const add = function (x, y, z) {
+//   return x + y + z;
+// };
+
+// doMath(2, 2, 2, multiply);
+// doMath(2, 2, 2, add);
+
+// const doMath = function (a, b, c, callback) {
+//   const result = callback(a, b, c);
+//   console.log(result);
+// };
+
+// const multiply = function (x, y, z) {
+//   return x * y * z;
+// };
+
+// const add = function (x, y, z) {
+//   return x + y + z;
+// };
+
+// doMath(3, 10, 8, multiply);
+// doMath(22, 5, 2, add);
+
+// const filter = function (array, callback) {
+//   const filteredArray = [];
+
+//   for (const el of array) {
+//     // console.log(el);
+//     // console.log(callback(el));
+//     const passed = callback(el);
+
+//     if (passed) {
+//       filteredArray.push(el);
+//     }
+//   }
+
+//   return filteredArray;
+// };
+
+// const callback1 = function (value) {
+//   return value >= 5;
+// };
+
+// // const callback2 = function (value) {
+// //   return value <= 5;
+// // };
+
+// // filter([1, 2, 3, 4, 5, 6, 7, 8], callback1);
+
+// console.log(filter([1, 2, 3, 4, 5, 6, 7, 8], callback1));
+// console.log(
+//   filter([1, 2, 3, 4, 5, 6, 7, 8], function (value) {
+//     return value <= 5;
+//   })
+// );
+
+// const fruits = [
+//   { name: "apples", quant: 333, isFresh: true },
+//   { name: "apples", quant: 222, isFresh: true },
+//   { name: "apples", quant: 111, isFresh: true },
+// ];
+
+// const getQuantFruits = function (fruitQuant) {
+//   return fruitQuant.quant >= 200;
+// };
+
+// console.log(filter(fruits, getQuantFruits));
+
+// function repeatLog(n) {
+//   for (let i = 0; i < n; i += 1) {
+//     console.log(i);
+//   }
+// }
+
+// repeatLog(5);
+
+// const students = [
+//   { name: "Манго", score: 83, courses: ["математика", "физика"] },
+//   { name: "Поли", score: 59, courses: ["информатика", "математика"] },
+//   { name: "Аякс", score: 37, courses: ["физика", "биология"] },
+//   { name: "Киви", score: 94, courses: ["литература", "информатика"] },
+// ];
+
+// const sortedByAscendingScore = [...students].sort((a, b) => a.score - b.score);
+// console.log(sortedByAscendingScore);
+// const names = sortedByAscendingScore.map((student) => student.name);
+
+// console.log(names); // ['Аякс', 'Поли', 'Манго', 'Киви']
+
+// Object.values(pizzas) === pizzaName
+//   ? makePizza(pizzaName)
+//   : onOrderError(error);
+
+//     order(pizzaName, makePizza, onOrderError) {
+//     if (this.pizzas.includes(pizzaName)) {
+//       return makePizza(pizzaName);
+//     }
+//      return onOrderError(`There is no pizza with a name ${pizzaName} in the assortment.`)
+//   },
+
+const arr = [1, 2, [3, 4], [5, 6], 7];
+//
+// console.log(foo(arr)); // [1, 2, 3, 4, 5, 6, 7]
+const newArr = arr.flat(1);
+console.log(newArr);
