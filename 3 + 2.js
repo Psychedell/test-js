@@ -735,8 +735,177 @@
 //      return onOrderError(`There is no pizza with a name ${pizzaName} in the assortment.`)
 //   },
 
-const arr = [1, 2, [3, 4], [5, 6], 7];
+// const arr = [1, 2, [3, 4], [5, 6], 7];
+// //
+// // console.log(foo(arr)); // [1, 2, 3, 4, 5, 6, 7]
+// const newArr = arr.flat(1);
+// console.log(newArr);
+// Колбэк-функция
+
+// function foo(...args) {
+//   console.log(this);
+//   console.log(args);
+// }
+
+// // foo(1, 2, 3);
+// // foo.call({}, 1, 2);
+// // foo.apply({}, [1, 2]);
+
+// const newFoo = foo.bind({ name: "Oleg" }, 3, 4, 5);
+// newFoo();
+
+// const Test = {
+//   name: "Oleg",
+//   age: 32,
+//   greet: function () {
+//     console.log("Привет!");
+//   },
+// };
+
+// console.log(Test);
+
+// const objC = {
+//   z: 5,
+// };
+
+// console.log(objC);
+
+// console.log(objC.hasOwnProperty("y"));
+
 //
-// console.log(foo(arr)); // [1, 2, 3, 4, 5, 6, 7]
-const newArr = arr.flat(1);
-console.log(newArr);
+//5 модуль
+//
+
+// const animal = {
+//   legs: 4,
+// };
+
+// const dog = Object.create(animal);
+// dog.name = "Манго";
+// dog.age = 7;
+
+// const fruit = Object.create(dog);
+// fruit.color = "black";
+
+// // console.log(fruit.legs);
+// // console.log(fruit);
+
+// // console.log(fruit.ddd);
+
+// // fruit.legs = 123;
+// console.log(fruit);
+// console.log(fruit.hasOwnProperty("legs"));
+
+// const Car = function ({ brand, model, price } = {}) {
+//   this.brand = brand;
+//   this.model = model;
+//   this.price = price;
+// };
+
+// Car.prototype.helloWorld = function () {
+//   console.log(
+//     `You just perchase ${this.brand} ${this.model} for ${this.price}. Thank you!`
+//   );
+// };
+
+// Car.prototype.changePrice = function (newPrice) {
+//   this.price = newPrice;
+// };
+
+// const myCar1 = new Car({ brand: "Audi", model: "q3", price: "34000" });
+// console.log(myCar1);
+
+// myCar1.helloWorld();
+
+// const myCar2 = new Car({
+//   brand: "Mitsubishi",
+//   model: "Lancer",
+//   price: "5999",
+// });
+// console.log(myCar2);
+// myCar2.changePrice(5700);
+
+// console.log(myCar2);
+
+// const Fruit = function ({ fruit, color, quantity, price, buyer, email } = {}) {
+//   this.fruit = fruit;
+//   this.color = color;
+//   this.quantity = quantity;
+//   this.price = price;
+//   this.buyer = buyer;
+//   this.email = email;
+// };
+
+// Fruit.prototype.orderTotalPrice = function () {
+//   return this.quantity * this.price;
+// };
+
+// Fruit.prototype.changeBuyr = function (newBuyer) {
+//   this.buyer = newBuyer;
+// };
+
+// Fruit.prototype.changeEmail = function (newEmail) {
+//   this.email = newEmail;
+// };
+
+// const apple = new Fruit({
+//   fruit: "apple",
+//   color: "green",
+//   quantity: 4,
+//   price: 20,
+//   buyer: "Anton Prajenkov",
+//   email: "a.praj@gmail.com",
+// });
+
+// const banana = new Fruit({
+//   fruit: "banana",
+//   color: "yellow",
+//   quantity: 11,
+//   price: 47,
+//   buyer: "Nick Anderson",
+//   email: "nileton@gmail.com",
+// });
+
+// const cherry = new Fruit({
+//   fruit: "cherry",
+//   color: "red",
+//   quantity: 123,
+//   price: 2,
+//   buyer: "Lena Kozak",
+//   email: "kozak@ukr.net",
+// });
+
+// console.log(apple);
+// console.log(apple.orderTotalPrice());
+
+// apple.changeBuyr("John Gold");
+// apple.changeEmail("goldjjj@gmail.com");
+// console.log(apple);
+
+// console.log(banana);
+// console.log(cherry);
+
+// console.log(Fruit.prototype);
+
+// class Car1 {
+//   constructor({ fruit, color, quantity, price, buyer, email } = {}) {
+//     this.fruit = fruit;
+//     this.color = color;
+//     this.quantity = quantity;
+//     this.price = price;
+//     this.buyer = buyer;
+//     this.email = email;
+//   }
+// }
+
+// console.dir(Car1);
+
+// const carInstance = new Car1({
+//   fruit: "apple",
+//   color: "green",
+//   quantity: 4,
+//   price: 20,
+//   buyer: "Anton Prajenkov",
+//   email: "a.praj@gmail.com",
+// });
+// console.log(carInstance);
