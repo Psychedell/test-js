@@ -909,3 +909,21 @@
 //   email: "a.praj@gmail.com",
 // });
 // console.log(carInstance);
+
+// сделать первую букву имени заглавной
+// const names = ["olga", "john", "Stan", "poll"];
+
+// const newUpperNames = names.map(
+//   (name) => name[0].toUpperCase() + name.slice(1)
+// );
+
+// console.log(newUpperNames);
+
+//перемножить массив
+// let arr = [2, 3, 4];
+
+// const summArr = arr.reduce((perv, item) => item * perv, 1);
+
+// console.log(summArr);
+
+const user = ["Dfyz"];
