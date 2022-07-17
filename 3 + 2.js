@@ -926,4 +926,108 @@
 
 // console.log(summArr);
 
-const user = ["Dfyz"];
+//.....................
+// const user = ["Ваня", "Иштван"];
+// console.log(user);
+// user.push("Оля");
+// console.log(user);
+// user.splice(1, 1, "Петя");
+// console.log(user);
+// const deleted = user.shift();
+// console.log(deleted);
+// console.log(user);
+// user.splice(0, 0, "Маша", "Паша");
+// console.log(user);
+
+// let arr = ["Ваня", "Иштван", "Оля"];
+// console.log(arr);
+// const deleted = arr.splice(1, 1);
+// console.log(arr);
+// console.log("Deleted name:", deleted);
+
+// arr.splice(1, 0, "Иштван");
+// console.log(arr);
+
+// let str = "Ваня, Иштван, Оля";
+// let arr = str.split(", ");
+// console.log(arr);
+// arr.push("Oleg");
+// console.log(arr);
+// console.log(arr[2]);
+
+// let arr = [9, 2, 8];
+// let reduceValue = arr.reduce(function (perviousValue, item, index, array) {
+//   console.log(perviousValue);
+// });
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+//   const values = Object.values(salaries);
+//   console.log(values);
+//   for (const value of values) {
+//     totalSalary += value;
+//   }
+//   // Change code above this line
+//   return totalSalary;
+// }
+
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+
+// const firstBook = {
+//   title: "Последнее королевство",
+//   coverImage:
+//     "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+// };
+
+// const {
+//   title: firstTitle,
+//   coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
+// } = firstBook;
+
+// console.log(firstTitle); // Последнее королевство
+// console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
+
+// const secondBook = {
+//   title: "Сон смешного человека",
+// };
+
+// const {
+//   title: secondTitle,
+//   coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
+// } = secondBook;
+
+// console.log(secondTitle); // Сон смешного человека
+// console.log(secondCoverImage); // https://via.placeholder.com/640/480
+
+// FIND метод
+// const colorPickerOptions = [
+//   { label: "red", color: "#F44336" },
+//   { label: "green", color: "#4CAF50" },
+//   { label: "blue", color: "#2196F3" },
+//   { label: "pink", color: "#E91E63" },
+//   { label: "indigo", color: "#3F51B5" },
+// ];
+
+// console.log(colorPickerOptions.find(({ label }) => label === "blue"));
+
+// class Car1 {
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   changePrice(newPrice) {
+//     this.price = price;
+//   }
+// }
+
+// console.log(Car1);
+
+// const carInstance = new Car1({
+//   brand: "Audi",
+//   model: "Q3",
+//   price: 35000,
+// });
+
+// console.log(carInstance);
