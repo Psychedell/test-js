@@ -1,5 +1,6 @@
 body {
-    maring: 50px;
+    maring: 24px;
+    background-color: whitesmoke;
 
 }
 
@@ -13,9 +14,7 @@ body {
     margin-bottom: 12px;
 }
 
-
-
-.container__btn {
+.container_btn {
     display: inline-block;
     width: 60px;
     height: 50px;

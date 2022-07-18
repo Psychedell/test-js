@@ -168,35 +168,118 @@
 // title.innerHTML = 'New and <span class="accent">improved</span> title';
 // // title.innerHTML = "";
 
-const colorPickerOptions = [
-  { label: "red", color: "#F44336" },
-  { label: "green", color: "#4CAF50" },
-  { label: "blue", color: "#2196F3" },
-  { label: "grey", color: "#607D8B" },
-  { label: "pink", color: "#E91E63" },
-  { label: "indigo", color: "#3F51B5" },
-];
+// const colorPickerOptions = [
+//   { label: "red", color: "#F44336" },
+//   { label: "green", color: "#4CAF50" },
+//   { label: "blue", color: "#2196F3" },
+//   { label: "grey", color: "#607D8B" },
+//   { label: "pink", color: "#E91E63" },
+//   { label: "indigo", color: "#3F51B5" },
+// ];
 
-// const option = colorPickerOptions[3];
+// // const colorPickerContainerEl = document.querySelector(".container");
 
-// const btnEl = document.createElement("button");
-// btnEl.type = "button";
-// btnEl.textContent = option.label;
-// btnEl.style.backgroundColor = option.color;
+// // const elements = colorPickerOptions.map((option) => {
+// //   const btnEl = document.createElement("button");
+// //   btnEl.type = "button";
+// //   btnEl.classList.add(".container_btn");
+// //   btnEl.textContent = option.label;
+// //   btnEl.style.backgroundColor = option.color;
+// //   btnEl.style.height = "60px";
+// //   btnEl.style.width = "60px";
+// //   btnEl.style.margin = "10px";
+// //   return btnEl;
+// // });
 
-// console.log(btnEl);
+// // colorPickerContainerEl.prepend(...elements);
 
-const colorPickerContainerEl = document.querySelector(".container");
+// // console.log(elements);
 
-const elements = colorPickerOptions.map((option) => {
-  const btnEl = document.createElement("button");
-  btnEl.type = "button";
-  btnEl.classList.add(".container__btn");
-  btnEl.textContent = option.label;
-  btnEl.style.backgroundColor = option.color;
-  return btnEl;
-});
+// const colorPickerContainerEl = document.querySelector(".container");
 
-colorPickerContainerEl.prepend(...elements);
+// const makeColorPickerOptions = (options) => {
+//   return options.map((option) => {
+//     const btnEl = document.createElement("button");
+//     btnEl.type = "button";
+//     btnEl.classList.add(".container_btn");
+//     btnEl.textContent = option.label;
+//     btnEl.style.backgroundColor = option.color;
+//     btnEl.style.height = "60px";
+//     btnEl.style.width = "60px";
+//     btnEl.style.margin = "10px";
 
-console.log(elements);
+//     return btnEl;
+//   });
+// };
+
+// const elements = makeColorPickerOptions(colorPickerOptions);
+// colorPickerContainerEl.prepend(...elements);
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     coverImage:
+//       "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+//     text: "При деструктуризации можно изменить имя переменной в которую распаковывается значение свойства. Сначала пишем имя свойства из которого хотим получить значение.",
+//   },
+//   {
+//     title: "Best King",
+//     coverImage:
+//       "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+//     text: "QQQqqqqqqqqqqqqqqqqqqq  wwwwwwwwww eeeeeeeeee rrrrrrr tttt yyy.",
+//   },
+//   {
+//     title: "Top rated seller magic",
+//     coverImage:
+//       "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+//     text: "Jkjfdlkfjdfjdg dgfdggd srwrrere.",
+//   },
+// ];
+
+// // const productEl = document.createElement("article");
+// // productEl.classList.add("container");
+
+// // const titleEl = document.createElement("h2");
+// // titleEl.classList.add("container__title");
+
+// // const imgEl = document.createElement("a");
+// // imgEl.href = firstBook.coverImage;
+// // imgEl.classList.add("container__img");
+
+// // const textEl = document.createElement("p");
+// // textEl.textContent = firstBook.text;
+// // textEl.classList.add("container__text");
+
+// // productEl.append(titleEl, imgEl, textEl);
+
+// // console.log(productEl);
+
+// const productContainerEl = document.querySelector(".js-product");
+
+// const makeProduct = ({ title, coverImage, text }) => {
+//   const productEl = document.createElement("article");
+//   productEl.classList.add("container");
+
+//   const titleEl = document.createElement("h2");
+//   titleEl.textContent = title;
+//   titleEl.classList.add("container__title");
+
+//   const imgEl = document.createElement("a");
+//   imgEl.href = coverImage;
+//   imgEl.classList.add("container__img");
+
+//   const textEl = document.createElement("p");
+//   textEl.textContent = text;
+//   textEl.classList.add("container__text");
+
+//   productEl.append(titleEl, imgEl, textEl);
+
+//   return productEl;
+// };
+
+// console.log(makeProduct(books[1]));
+
+// const elements = books.map(makeProduct);
+// console.log(elements);
+
+// productContainerEl.append(...elements);
