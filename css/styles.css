@@ -1,3 +1,26 @@
 body {
-    margin: 24px;
+    maring: 50px;
+
+}
+
+.usernames li {
+    padding: 8px;
+    border: 2px dashed tomato;
+    text-transform: uppercase;
+}
+
+.usernames li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+
+
+.container__btn {
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
