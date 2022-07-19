@@ -283,3 +283,7 @@
 // console.log(elements);
 
 // productContainerEl.append(...elements);
+
+const divEl = document.querySelector(".container");
+divEl.setAttribute("data-action", "add");
+console.log(divEl);
