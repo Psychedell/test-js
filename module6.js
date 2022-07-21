@@ -284,6 +284,69 @@
 
 // productContainerEl.append(...elements);
 
-const divEl = document.querySelector(".container");
-divEl.setAttribute("data-action", "add");
-console.log(divEl);
+// const divEl = document.querySelector(".container");
+// divEl.setAttribute("data-action", "add");
+// console.log(divEl);
+
+// const testBtnEl = document.querySelector(".test__btn");
+
+// testBtnEl.addEventListener("click", ontestBtnAddClick);
+
+// function ontestBtnAddClick(event) {
+//   console.log(event);
+//   console.log("Клик на кнопку");
+// }
+
+// function ontestBtnRemoveClick() {
+//   console.log("Клик на кнопку");
+// }
+
+// testBtnEl.addEventListener("click", ontestBtnRemoveClick);
+
+// const form = document.querySelector(".js-register-form");
+
+// form.addEventListener("submit", onFormSumbit);
+
+// function onFormSumbit(event) {
+//   event.preventDefault();
+
+//   const formData = new FormData(event.currentTarget);
+
+//   formData.forEach((value, name) => console.log(name, value));
+// }
+
+// const input = document.querySelector(".js-input");
+// const nameLabel = document.querySelector("js.button > span");
+// const license = document.querySelector(".js-license");
+// const btn = document.querySelector(".js-button");
+
+// const refs = {
+//   input: document.querySelector(".js-input"),
+//   nameLabel: document.querySelector(".js-button > span"),
+//   licenseCheckbox: document.querySelector(".js-license"),
+//   btn: document.querySelector(".js-button"),
+// };
+
+// // refs.input.addEventListener("focus", onInputFocus);
+// // refs.input.addEventListener("blur", onInputBlur);
+
+// refs.input.addEventListener("input", onInputChange);
+// refs.licenseCheckbox.addEventListener("change", onLicenseChange);
+
+// function onInputFocus() {
+//   console.log("event focus takes");
+// }
+
+// function onInputBlur() {
+//   console.log("event blur takes");
+// }
+
+// function onInputChange(event) {
+//   //   console.log(event.currentTarget.value);
+//   refs.nameLabel.textContent = event.currentTarget.value;
+// }
+
+// function onLicenseChange(event) {
+//   //   console.log(event.currentTarget.checked);
+//   refs.btn.disabled = !event.currentTarget.checked;
+// }
