@@ -350,3 +350,10 @@
 //   //   console.log(event.currentTarget.checked);
 //   refs.btn.disabled = !event.currentTarget.checked;
 // }
+
+// const target = 10;
+// // let sum = 0;
+
+// for (let i = 0; i <= target; i += 1) {
+//   console.log(i);
+// }
