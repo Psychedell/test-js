@@ -99,3 +99,19 @@ setTimeout(() => {
 // hoursEl.style.fontSize = "30px";
 // minutesEl.style.fontSize = "30px";
 // secondsEl.style.fontSize = "30px";
+
+function createBankList(banks) {
+  bankListUl.innerHTML = "";
+  bankListUl.insertAdjacentHTML(
+    "afterbegin",
+    banks
+      .map((bank, index) => {
+        return `<li class="bank__item">
+        <p>${index + 1}. <span>${bank.name}</span></p>
+        <button type="button" class="button--edit"></button>
+        <button type="button" class="button--delete"></button>
+      </li>`;
+      })
+      .join("")
+  );
+}
